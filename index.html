@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="sha256.js"></script>
+    <script async type="text/javascript" src="file.js"></script>
+    <!-- <script type="text/javascript" src="download.js"></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="fevicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="fevicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="fevicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="fevicon/site.webmanifest" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+
+    <title>Password Creator</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div>
+        <h1>Password Creator</h1>
+      </div>
+
+      <div>
+        <div>
+          <label for="fpass">what the length of password needed</label>
+          <input type="text" id="fpass" name="fpass" />
+          <!-- <button id="pass1" class="cop">
+                    <i class="far fa-copy""></i>
+                </button> -->
+        </div>
+        <div>
+          <label for=" falpha">what the number of alphabets needed </label>
+          <input type="text" id="falpha" name="falpha" />
+          <!-- <button id="pass2" class="cop">
+                            <i class="far fa-copy"></i>
+                        </button> -->
+        </div>
+        <div>
+          <label for="fdigit">what the number of digits needed </label>
+          <input type="text" id="fdigit" name="fdigit" />
+          <!-- <button id="pass3" class="cop">
+                    <i class="far fa-copy"></i>
+
+                </button> -->
+        </div>
+        <div>
+          <label for="fsplchar">what the number of spl chars needed </label>
+          <input type="text" id="fsplchar" name="fsplchar" />
+          <!-- <button id="pass4" class="cop">
+                    <i class="far fa-copy"></i>
+
+                </button> -->
+        </div>
+
+        <div>
+          <button class="Gsubmit" id="genrated">Genrate Password</button>
+          <!-- <button class="Gsubmit" onclick="click_pass();" id="genrated"> Genrate Password </button> -->
+        </div>
+
+        <div>
+          <label for="fsplchar">The Genrated Password</label>
+          <input type="text" id="fgenpass" name="fgenpass" />
+          <!-- <button id="pass5" class="cop">
+                    <i class="far fa-copy"></i>
+                </button> -->
+        </div>
+        <div>
+          <label for="fsplchar">SHA256 HEX of genrated password </label>
+          <input type="text" id="fhexpass" name="fhexpass" />
+          <!-- <button id="pass6" class="cop">
+                    <i class="far fa-copy"></i>
+                </button> -->
+        </div>
+
+        <!-- <div>
+                <button class="submit" onclick="WriteToFile();"> Download password as TXT File</button>
+                <button class="submit" id="download;"> Download password as TXT File</button>
+            </div> -->
+
+        <div>
+          <button class="Csubmit" id="clean">Clear all Inputs</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
